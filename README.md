@@ -1,2 +1,2 @@
-# nava
+# Nava
 Nava tourism web app
