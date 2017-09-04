@@ -1,98 +1,75 @@
 /*
  Created By Hussien Mohamed Farghal
  Copyright (C) 2017 - All Rights Reserved.
- UI Kit for design better consost of main sections 
 */
 
 //main variables
 //colors
 $white: #fff;
-$gray: #f3f3f4;
-$gray-mid: #687189;
-$gray-dark: #384D67;
-$gray-darker: #293846;
-$sidebar-color:#2F4050;
-$light-gray: #D1DADE;
-$dark-gray: #c2c2c2;
-$blue: #1c84c6;
-$blue-dark:#1a7bb9;
-$blue-trivial: #91b9de;
-$cyan: #23c6c8;
-$cyan-dark:#21b9bb;
-$orange: #f8ac59;
-$orang-light: #f8ac59;
-$yellow: #fdb813;
-$red:#ec1c24;
-$red-light: #ED5565;
-$red-dark: #dc3a4b;
-$green: #1ab394;
-$green-dark:#18a689;
-$black: #000;
-$border-color: #d4d4d4;
-$border-color-light: #e7eaec;
-$icon-color:#686b6d;
-$icon-shadow: rgba(0, 0, 0, 0.2) -3px 0px 10px;
-$navy: $green;
-$lazur: $cyan;
-$text-color: #676a6c; // Body text
-$text-color-dark:#333;
-$label-badget-color: #5E5E5E;
+$black:#000;
+$red:#ff3366;
+$gray-dark:#717171;
+$text-color: #343434; // Body text
 //fonts family
-$open-sans:"open sans",
-"Helvetica Neue",
-Helvetica,
-Arial,
-sans-serif;
-$roboro:"Roboto",
-sans-serif;
+$open-sans:"opensans";
+$raleway:"raleway";
+//font weight
+$font-light:100;
+$font-normal:400;
+$font-semibold:600;
+$font-bold:700;
+$font-extrabold:900;
+//font-sizes 
+$font-sm:0.75rem;
+$font-md: 0.875rem !important;
+$font-base:1rem;
+$font-large: 1.25rem;
+$font-xlarge: 1.625rem;
+$font-xxlarge: 2rem;
 //font-size
-.font-xs {
-    font-size: 10px;
-}
-
 .font-sm {
-    font-size: 12px;
+    font-size: $font-sm;
 }
 
 .font-md {
-    font-size: 14px;
+    font-size: $font-md;
+}
+
+.font-base {
+    font-size: $font-base;
 }
 
 .font-large {
-    font-size: 16px;
+    font-size: $font-large;
 }
 
 .font-xlarge {
-    font-size: 20px;
+    font-size: 1.625rem;
 }
 
 .font-xxlarge {
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 //font weight
-.font-lighter {
-    font-weight: 100;
-}
-
 .font-light {
-    font-weight: 300;
+    font-weight: $font-light;
 }
 
 .font-normal {
-    font-weight: 400;
+    font-weight: $font-normal;
 }
 
 .font-semibold {
-    font-weight: 600;
+    font-weight: $font-semibold;
 }
 
 .font-bold {
-    font-weight: 700;
+    font-weight: $font-bold;
 }
 
 .font-bolder {
-    font-weight: 900;
+    font-weight: $font-extrabold;
 }
 
 //colors 
@@ -104,72 +81,8 @@ sans-serif;
     color: $black;
 }
 
-.green {
-    color: $green;
-}
-
-.green-dark {
-    color: $green-dark;
-}
-
 .red {
     color: $red;
-}
-
-.red-dark {
-    color: $red-dark;
-}
-
-.blue {
-    color: $blue;
-}
-
-.blue-dark {
-    color: $blue-dark;
-}
-
-.gray {
-    color: $gray;
-}
-
-.gray-light {
-    color: $light-gray;
-}
-
-.gray-mid {
-    color: $gray-mid;
-}
-
-.gray-dark {
-    color: $gray-dark;
-}
-
-.gray-darker {
-    color: $gray-darker;
-}
-
-.yellow {
-    color: $yellow;
-}
-
-.orange {
-    color: $orange;
-}
-
-.orange-light {
-    color: $orang-light;
-}
-
-.yellow {
-    color: $yellow;
-}
-
-.text-color {
-    color: $text-color;
-}
-
-.text-color-dark {
-    color: $text-color-dark;
 }
 
 
@@ -1558,50 +1471,6 @@ margin left
     width: 100% !important;
 }
 
-//borders 
-.border-bottom {
-    border-bottom: 1px solid $border-color !important;
-}
-
-.border-top {
-    border-top: 1px solid $border-color !important;
-}
-
-.border-right {
-    border-right: 1px solid $border-color !important;
-}
-
-.border-left {
-    border-left: 1px solid $border-color !important;
-}
-
-.no-border-top {
-    border-top: none;
-}
-
-.no-border-bottom {
-    border-bottom: none;
-}
-
-.no-border-right {
-    border-right: none;
-}
-
-.no-border-left {
-    border-left: none;
-}
-
-.border-left-right {
-    border-left: 1px solid $border-color;
-    border-right: 1px solid $border-color;
-    border-top: none;
-    border-bottom: none;
-}
-
-.reddark-border {
-    border-color: $red-dark;
-}
-
 //cursor
 .cursor-default {
     cursor: default !important;
@@ -1640,82 +1509,32 @@ margin left
      :focus,
      :active,
      :visited {
-        background-color: $red-dark;
+        background-color: $red;
         color: $white !important;
-        border-color: $red-dark;
+        border-color: $red;
     }
+}
+
+.transparent-btn {
+    background-color: transparent;
+    color: $white;
+    border-color: white;
 }
 
 
 /* BACKGROUNDS */
 
-.gray-bg {
-    background-color: $gray;
-}
-
-.graymid-bg {
-    background-color: $gray-mid;
-}
-
-.graydark-bg {
-    background-color: $gray-dark;
-}
-
-.graydarker-bg {
-    background-color: $gray-darker;
+.transparent-bg {
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .white-bg {
     background-color: $white;
 }
 
-.green-bg {
-    background-color: $green;
-    color: $white;
-}
-
-.greendark-bg {
-    background-color: $green-dark;
-}
-
-.blue-bg {
-    background-color: $blue;
-}
-
-.bluedark-bg {
-    background-color: $blue-dark;
-}
-
-.cyan-bg {
-    background-color: $cyan;
-}
-
-.cyandark-bg {
-    background-color: $cyan;
-}
-
-.yellow-bg {
-    background-color: $yellow;
-    color: $white;
-}
-
-.orange-bg {
-    background-color: $orange;
-    color: $white;
-}
-
-.orangelight-bg {
-    background-color: $orang-light;
-    color: $white;
-}
-
 .red-bg {
     background-color: $red !important;
-    color: $white;
-}
-
-.reddark-bg {
-    background-color: $red-dark;
     color: $white;
 }
 
@@ -1724,13 +1543,8 @@ margin left
     color: $white;
 }
 
-.bluetrivial-bg {
-    background-color: $blue-trivial;
-    color: $white;
-}
-
 //shadows
-.img-shadow {
+.box-shadow {
     -webkit-box-shadow: 0 0 3px 0 rgba(145, 145, 145, 1);
     -moz-box-shadow: 0 0 3px 0 rgba(145, 145, 145, 1);
     box-shadow: 0 0 3px 0 rgba(145, 145, 145, 1);

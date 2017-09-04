@@ -9,10 +9,85 @@
 */
 
 //main fonts
+//open sans type fonts 
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans-light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans-ExtraBold.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+//Raleway type fonts
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-ExtraBold.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
 //font awsome libary fonts
 @import"_font-awesome";
 //bootstrap grid
 @import "bootstrap";
+//plugins
+//hover css libary 
+@import"_hover-min";
 //  custom style to override base style
 @import "uikit";
 @import "custom";
