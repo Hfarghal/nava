@@ -49,9 +49,10 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
     return gulp.src("src/js/*.js")
         .pipe(order([
-            "jquery-3.2.1.js",
-            "tether.js",
+            "jquery.js",
             "bootstrap.js",
+            "jquery.easing.min.js",
+            "scrolling-nav.js",
             "custom.js"
 
 
@@ -83,7 +84,7 @@ gulp.task('html', function() {
         .pipe(notify('html task finished'))
 });
 
-
+gulp.task('dev', ['styles', 'scripts', 'images']);
 //dev task un minified
 gulp.task('dev', function() {
         gulp.watch('src/scss/*.scss', ['styles']);
