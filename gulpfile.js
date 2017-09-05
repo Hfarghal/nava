@@ -38,7 +38,7 @@ gulp.task('styles', function() {
             }
         }))
         .pipe(sass())
-        .pipe(autoprefixer('last 4 versions'))
+        .pipe(autoprefixer({ browsers: ['> 1%', 'last 5 versions', 'Firefox <=5', 'ie 9', 'Safari <=7', 'Opera <=20'] }))
         .pipe(gulp.dest('dist/styles/'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
